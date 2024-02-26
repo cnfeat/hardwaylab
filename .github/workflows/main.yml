@@ -4,7 +4,7 @@ name: Auto Deploy
 on:
   push:
     branches: 
-      - master  # 确保这是你的主分支
+      - master  # 确保这是你的主分
 
 jobs:
   build-and-deploy:
