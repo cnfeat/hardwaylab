@@ -1,0 +1,3 @@
+import comp from "C:/Users/Administrator/Documents/GitHub/hardwaylab/docs/.vuepress/.temp/pages/course/writing.html.vue"
+const data = JSON.parse("{\"path\":\"/course/writing.html\",\"title\":\"笨方法学写作\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"笨方法学写作\"},\"headers\":[{\"level\":2,\"title\":\"课程介绍\",\"slug\":\"课程介绍\",\"link\":\"#课程介绍\",\"children\":[]},{\"level\":2,\"title\":\"课程形式\",\"slug\":\"课程形式\",\"link\":\"#课程形式\",\"children\":[]},{\"level\":2,\"title\":\"注意事项\",\"slug\":\"注意事项\",\"link\":\"#注意事项\",\"children\":[]},{\"level\":2,\"title\":\"购前必读\",\"slug\":\"购前必读\",\"link\":\"#购前必读\",\"children\":[]}],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"course/writing.md\"}")
+export { comp, data }
