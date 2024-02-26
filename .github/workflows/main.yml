@@ -8,9 +8,7 @@ on:
 
 jobs:
   build-and-deploy:
-    name: Build and Deploy
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -25,13 +23,12 @@ jobs:
         run: npm install
 
       - name: Build docs
-        run: npm run docs:build
+        run: npm run docs:build  # 使用正确的构建命令
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # 部署到gh-pages分支
-          folder: docs/.vuepress/dist  # VuePress构建的输出目录
-          # 移除直接硬编码的TOKEN，改为使用GitHub Secrets
-          token: ${{ secrets.GITHUB_TOKEN }}  # 使用GitHub自动生成的Token
+          branch: gh-pages
+          folder: docs/.vuepress/dist
+          token: ${{ secrets.GITHUB_TOKEN }}
 
